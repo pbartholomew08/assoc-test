@@ -1,7 +1,5 @@
 submodule (foo) bar
 
-        use foo
-
         implicit none
 
 contains
