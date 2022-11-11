@@ -1,0 +1,7 @@
+assoc
+
+*.o
+*.mod
+*.smod
+
+core
