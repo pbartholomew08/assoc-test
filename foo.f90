@@ -8,22 +8,15 @@ module foo
                 module subroutine run_impl()
                 end subroutine
         end interface
+        interface init
+                module subroutine init_impl(v)
+                        integer, intent(in) :: v
+                end subroutine
+        end interface
 
         private
 
         public :: run
-        public :: init
-
-contains
-
-        subroutine init(v)
-
-                integer, intent(in) :: v
-
-                a = v
-
-                print *, "Set A in host module: A=", a
-
-        end subroutine
+        !public :: init
 
 end module
